@@ -1,3 +1,33 @@
 body {
-  color: blue;
+  color: #212121;
+}
+
+/* Навигация */
+
+.navbar-logo {
+  color: #000000;
+}
+
+.nav-web {
+  color: #2196f3;
+}
+
+.navbar-link {
+  color: #212121;
+}
+
+.navbar-link:hover,
+.navbar-link:focus {
+  color: #2196f3;
+}
+
+/* Контакты */
+
+.contact:hover,
+.contact:focus {
+  color: #2196f3;
+}
+
+.contact {
+  color: #757575;
 }
