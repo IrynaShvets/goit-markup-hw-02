@@ -1,11 +1,14 @@
 body {
   color: #212121;
+  font-family: Roboto, sans-serif;
 }
 
 /* Навигация */
 
 .navbar-logo {
   color: #000000;
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
 }
 
 .nav-web {
@@ -14,6 +17,7 @@ body {
 
 .navbar-link {
   color: #212121;
+  text-decoration: none;
 }
 
 .navbar-link:hover,
@@ -30,4 +34,33 @@ body {
 
 .contact {
   color: #757575;
+  text-decoration: none;
+}
+
+/* Герой */
+
+.hero-title {
+  color: #ffffff;
+  background-color: #2f303a;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1, 36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  color: #ffffff;
+  background: #2196f3;
+  font-family: inherit;
+}
+
+/* Стратегия */
+.strategy-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
