@@ -1,9 +1,24 @@
-body {
-  color: #212121;
-  font-family: Roboto, sans-serif;
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --primary-background: #ffffff;
+  --selection-color: #2196f3;
 }
 
-/* Навигация */
+body {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  background: var(--primary-background);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Навигация хедера */
 
 .navbar-logo {
   color: #000000;
@@ -12,29 +27,34 @@ body {
 }
 
 .nav-web {
-  color: #2196f3;
+  color: var(--selection-color);
 }
 
 .navbar-link {
-  color: #212121;
+  color: var(--primary-text-color);
   text-decoration: none;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .navbar-link:hover,
 .navbar-link:focus {
-  color: #2196f3;
+  color: var(--selection-color);
 }
 
-/* Контакты */
+/* Контакты хедера */
+
+.contact {
+  color: var(--secondary-text-color);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
 
 .contact:hover,
 .contact:focus {
-  color: #2196f3;
-}
-
-.contact {
-  color: #757575;
-  text-decoration: none;
+  color: var(--selection-color);
 }
 
 /* Герой */
@@ -44,23 +64,114 @@ body {
   background-color: #2f303a;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 36;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.hero-button {
-  color: #ffffff;
-  background: #2196f3;
+/* Кнопки */
+
+.button {
+  color: inherit;
   font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background-color: #f5f4fa;
+}
+
+.button:hover,
+.button:focus {
+  color: #ffffff;
+  background: var(--selection-color);
+}
+
+.hero-button {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: #ffffff;
+  background: var(--selection-color);
 }
 
 /* Стратегия */
+
 .strategy-title {
-  font-weight: bold;
   font-size: 14px;
-  line-height: 1, 14;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
+}
+
+.strategy-text {
+  color: var(--secondary-text-color);
+  line-height: 1.71;
+}
+
+/* Занятия и команда */
+
+.work-title,
+.command-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.command-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.command-profession {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Фильтеры */
+
+.filter-link {
+  text-decoration: none;
+}
+
+.filter-title {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.filter-text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* Футер */
+
+.address {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.71;
+  color: #ffffff;
+  background-color: #2f303a;
+}
+
+.address-contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-contact:hover,
+.address-contact:focus {
+  color: var(--selection-color);
 }
